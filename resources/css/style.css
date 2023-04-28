@@ -1,0 +1,24 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.logo {
+    font-family: 'Pirata One', cursive;
+    letter-spacing: 10px; 
+    font-size: 64px;
+}
+
+.bg-main {
+    background-color: #d7e1ec;
+}
+
+.nav-link {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
