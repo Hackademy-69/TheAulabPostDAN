@@ -4,8 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Article;
 use App\Models\Category;
-use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
+use Symfony\Component\HttpFoundation\Request;
 
 class ArticleController extends Controller
 {
@@ -98,5 +99,12 @@ class ArticleController extends Controller
 
 
         return view('article.category', compact('articles', 'category'));
+    }
+
+    public function articleSearch(Request $request){
+        $query = $request->input('query');
+        $articles = Article::search($query)->where('is_accepted', true)->orderBy('created_at', 'desc')->get();
+
+        return view('article.search-index', compact('articles', 'query'));
     }
 }
