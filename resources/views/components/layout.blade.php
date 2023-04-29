@@ -9,15 +9,16 @@
 
     <title>The Aulab Post</title>
 </head>
-<body class="bg-main">
+<body>
 
     <x-navbar />
+    
     <x-pages.header headerTitle={{$headerTitle}} />   
-
+    
     {{ $slot }}
-
+    
     <x-footer />
-
+    
     <script src="{{asset('js/app.js')}}"></script>
     
 </body>

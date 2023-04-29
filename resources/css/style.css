@@ -1,24 +1,23 @@
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 800;
-    letter-spacing: 5px;
+h3, h4{
+    font-family: 'Jura', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+h5, h6, p{
+    font-family: 'Jura', sans-serif;
+    font-weight: 300;
+    
 }
 
-* {
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.logo {
-    font-family: 'Pirata One', cursive;
+h1, h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
     letter-spacing: 10px; 
-    font-size: 64px;
+    font-size: 40px;
 }
 
-.bg-main {
-    background-color: #d7e1ec;
+
+body {
+    background-image: linear-gradient(rgb(224, 127, 16), rgb(180, 10, 180));
 }
 
-.nav-link {
-    letter-spacing: 5px;
-    text-transform: uppercase;
-}
