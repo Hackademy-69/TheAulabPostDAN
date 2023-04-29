@@ -14,6 +14,11 @@
                         <p class="card-text">{{ substr($article->subtitle, 0, 20) }} ...</p>
                         <hr>
                         <a href="{{route('article.category', $article->category)}}" class="card-text">{{$article->category->name}}</a>
+                        <p class="small fst-normal">
+                            @foreach ($article->tags as $tag)
+                            #{{$tag->name}}
+                            @endforeach
+                        </p>
                         <br>
                         <a href="{{route('article.show', $article)}}" class="btn bg-main mt-3">Leggi</a>
                         </div>

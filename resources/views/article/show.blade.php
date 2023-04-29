@@ -9,6 +9,12 @@
 
                 <h3>{{$article->subtitle}}</h3>
                 <p class="fst-italic small text-decoration-underline"><a href="{{route('article.category', $article->category)}}" class="card-text">{{$article->category->name}}</a></p>
+                
+                <p class="small fst-normal">
+                    @foreach ($article->tags as $tag)
+                    #{{$tag->name}}
+                    @endforeach
+                </p>
 
                 <p class="my-5">{{$article->body}}</p>
 

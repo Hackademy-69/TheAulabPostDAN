@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Tag;
 use App\Models\Article;
 use App\Models\Category;
 use Illuminate\Routing\Controller;
@@ -38,13 +39,32 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'title' => 'required|unique:articles|min:5',
+            'subtitle' => 'required|unique:articles|min:5',
+            'body' => 'required|min:10',
+            'image' => 'image|required',
+            'category' => 'required',
+            'tags' => 'required',
+        ]);
+
         Auth::user()->articles()->create([
             'title' => $request->title,
             'subtitle' => $request->subtitle,
             'body' => $request->body,
             'img' => $request->file('img')->store('public/img'),
             'category_id' => $request->category_id,
+            
         ]);
+
+        $tags = explode(', ', $request->tags);
+
+        foreach ($tags as $tag) {
+            $newTag = Tag::updateOrCreate([
+                'name' => $tag,
+            ]);
+            $article->tags()->attach($newTag);
+        }
 
         return redirect()->route('home')->with("message", "Articolo caricato correttamente");
     }
