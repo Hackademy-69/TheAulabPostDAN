@@ -11306,7 +11306,36 @@ body {
     background-image: linear-gradient(rgb(224, 127, 16), rgb(180, 10, 180));
 }
 
+/* button */
 
+.button-2 {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border: 1px solid black;
+    border-radius: 0px;
+    padding: 5px 50px;
+    text-transform:  uppercase;
+    transition: 0.5s;
+    background: linear-gradient(90deg, white 50% ,rgb(246, 133, 20) 50%);
+    background-size:  200%;
+    background-position:  0px 0px;
+    position: relative;
+}
+.button-2-icon{
+    position: absolute;
+    left: 16px;
+}
+.button-2:hover {
+    background-position: -120% 0px;
+    color: black;
+    border: 1px solid black;
+}
+.button-2:hover .button-2-icon {
+    color: black;
+}
 .buttonsrc {
 	display: inline-block;
 	margin: 4px 2px;
@@ -11410,5 +11439,38 @@ body {
 .nav-link {
     letter-spacing: 5px;
     text-transform: uppercase;
+}
+
+.card{
+    transition: 0.4s;
+}
+
+
+
+.tag-text{
+    font-weight: 500;
+    color: blue;
+}
+
+.category-style{
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: rgb(29, 97, 244);
+    border-bottom: 1px solid rgb(29, 97, 244);
+    
+}
+
+.category-style:hover{
+    scale: 1.2;
+}
+
+/* detail */
+.bg-detail{
+    background-color: rgb(248, 223, 211);
+}
+
+.sub-text{
+    font-weight: 600;
 }
 

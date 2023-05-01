@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="bg-dark text-center text-white mt-5">
+<footer class="bg-dark text-center text-white ">
 
     <div class="container-fluid bg-dark d-block text-center">
       <p class="m-0 p-3 text-white logo">The Aulab Post</p>

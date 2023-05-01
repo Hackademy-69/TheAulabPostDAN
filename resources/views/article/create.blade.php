@@ -48,7 +48,8 @@
                         <label for="image" class="form-label">Copertina:</label>
                         <input name="img" type="file" class="form-control" id="image">
                     </div>
-
+                    
+                    
                     <div class="mb-3">
                         <label for="body" class="form-label">Corpo del testo:</label>
                         <textarea name="body" id="body" cols="30" rows="6" class="form-control">{{old('body')}}</textarea>
@@ -57,7 +58,7 @@
                     <div class="mt-2">
                         <button class="btn bg-main">Pubblica articolo</button>
                     </div>
-
+                    
                 </form>
             </div>
         </div>
