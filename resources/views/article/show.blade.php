@@ -25,7 +25,7 @@
 
             </div>
             <div class="text-end mb-3 me-3">
-                <a href="{{route('home')}}" class="btn bg-dark text-light">Torna alla home</a>
+                <a href="{{route('home')}}" class="btn button-2">Torna alla home</a>
             </div>
         </div>
     </div>

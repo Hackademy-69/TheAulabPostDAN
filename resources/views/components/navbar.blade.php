@@ -1,6 +1,6 @@
 <nav>
     <div class="container-fluid bg-dark d-block text-center">
-      <p class="m-0 p-3 text-white logo">The Aulab Post</p>
+      <p class="m-0 p-3 text-white logo text-logo">The Aulab Post</p>
     </div>
 </nav>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">

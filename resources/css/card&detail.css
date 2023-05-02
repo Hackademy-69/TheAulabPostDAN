@@ -1,9 +1,15 @@
 
-.card{
-    transition: 0.4s;
+.card-custom{
+    transition: 0.4s;   
 }
 
+.card-custom:hover{
+    scale: 1.05;
+}
 
+.card-img-custom{
+    height: 300px;
+}
 
 .tag-text{
     font-weight: 500;
@@ -31,3 +37,13 @@
 .sub-text{
     font-weight: 600;
 }
+
+/* form */
+
+.form-create{
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,1);
+}
+
+.form-create2{
+    box-shadow: 3px 3px 9px 3px rgba(0,0,0,0.7);
+  }

@@ -16,7 +16,7 @@
                 </div>
             @endif
 
-            <form class="card p-5 shadow" action="{{route('careers.submit')}}" method="post">
+            <form class="card p-5 form-create" action="{{route('careers.submit')}}" method="post">
             
                 @csrf
 
@@ -40,7 +40,7 @@
                 </div>
 
                 <div class="mb-3">
-                    <button class="btn bg-main" type="submit">Invia candidatura</button>
+                    <button class="btn button-2" type="submit">Invia candidatura</button>
                 </div>
 
             </form>

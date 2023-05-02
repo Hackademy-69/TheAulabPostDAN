@@ -15,7 +15,7 @@
                     </div>
                 @endif
 
-                <form class="card p-5 shadow" action="{{route('article.store')}}" method="post" enctype="multipart/form-data">
+                <form class="card p-5 form-create" action="{{route('article.store')}}" method="post" enctype="multipart/form-data">
                 
                     @csrf
 
@@ -41,7 +41,7 @@
                     <div class="mb-3">
                         <label for="tags" class="form-label">Tags:</label>
                         <input name="tags" id="tags" class="form-control" value="{{old('tags')}}">
-                        <span class="small fst-normal">Dividi ogni tag con una virgola</span>
+                        <span class="small fst-normal">inserisci tag</span>
                     </div>
 
                     <div class="mb-3">
@@ -56,7 +56,7 @@
                     </div>
 
                     <div class="mt-2">
-                        <button class="btn bg-main">Pubblica articolo</button>
+                        <button class="btn bg-main button-2">Pubblica articolo</button>
                     </div>
                     
                 </form>
