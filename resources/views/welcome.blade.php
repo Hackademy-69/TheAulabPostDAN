@@ -18,8 +18,9 @@
                     <div class="card card-custom" style="width: 22rem;">
                         <img src="{{Storage::url($article->img)}}" class="card-img-top card-img-custom" alt="{{$article->title}}">
                         <div class="card-body">
-                        <h5 class="card-title">{{$article->title}}</h5>
-                        <p class="card-text">{{ substr($article->subtitle, 0, 20) }}</p>
+                            <p>{{$article->created_at->format('d/m/Y')}}</p>
+                        <h5 class="card-title mb-0">{{$article->title}}</h5>
+                        <p class="card-text mb-0">{{ substr($article->subtitle, 0, 20)}}...</p>
                         <hr>
                         @if($article->category)
                         <a href="{{route('article.category', $article->category)}}" class="category-style">{{$article->category->name}}</a>
@@ -31,8 +32,7 @@
                             #{{$tag->name}}
                             @endforeach
                         </p>
-                        <br>
-                        <a href="{{route('article.show', $article)}}" class="btn btn-custom mt-3">Leggi</a>
+                        <a href="{{route('article.show', $article)}}" class="btn btn-custom">Leggi</a>
                         </div>
                     </div>
                 </div>
@@ -40,6 +40,5 @@
 
         </div>
     </div>
-
 
 </x-layout>

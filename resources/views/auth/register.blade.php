@@ -41,7 +41,7 @@
                     </div>
 
                     <div class="mt-2">
-                        <button class="btn button-2">Registrati</button>
+                        <button class="btn btn-custom">Registrati</button>
                         <p class="small mt-2">Già registrato? <a href="{{route('login')}}">Clicca qui</a></p>
                     </div>
 

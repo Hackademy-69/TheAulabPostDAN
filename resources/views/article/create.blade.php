@@ -56,7 +56,7 @@
                     </div>
 
                     <div class="mt-2">
-                        <button class="btn bg-main button-2">Pubblica articolo</button>
+                        <button class="btn bg-main btn-custom">Pubblica articolo</button>
                     </div>
                     
                 </form>

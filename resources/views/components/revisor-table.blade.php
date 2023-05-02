@@ -20,7 +20,7 @@
                 <td>{{ $article->category->name }}</td>
                 <td>{{ $article->created_at->format('Y-m-d') }}</td>
                 <td>
-                    <a href="{{ route('revisor.detail', $article) }}" class="btn button-2">Leggi</a>
+                    <a href="{{ route('revisor.detail', $article) }}" class="btn btn-custom">Leggi</a>
                 </td>
             </tr>
         @endforeach

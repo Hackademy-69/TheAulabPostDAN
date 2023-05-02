@@ -21,7 +21,7 @@
 
             <div class="d-flex justify-content-center text-center mt-5">
                 <a href="{{route('revisor.accept', $article)}}" class="btn btn-success">Accetta articolo</a>
-                <a href="{{route('revisor.dashboard')}}" class="btn button-2 mx-5">Torna alla dashboard del revisore</a>
+                <a href="{{route('revisor.dashboard')}}" class="btn btn-custom mx-5">Torna alla dashboard del revisore</a>
                 <a href="{{route('revisor.reject', $article)}}" class="btn btn-danger">Rifiuta articolo</a>
             </div>
         </div>

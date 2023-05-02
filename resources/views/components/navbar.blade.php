@@ -52,7 +52,7 @@
           @endguest
         </ul>
 
-        <div class="search-container">
+        <div class="search-container d-none d-lg-block">
           <form action="{{route('article.search')}}" method="GET">
             <input class="search expandright form-control" id="searchright" type="search" name="query" placeholder="Cosa stai cercando?">
             <label class="buttonsrc searchbutton" for="searchright" type="submit"><span class="mglass">&#9906;</span></label>

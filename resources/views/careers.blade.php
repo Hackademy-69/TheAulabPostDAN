@@ -40,7 +40,7 @@
                 </div>
 
                 <div class="mb-3">
-                    <button class="btn button-2" type="submit">Invia candidatura</button>
+                    <button class="btn btn-custom" type="submit">Invia candidatura</button>
                 </div>
 
             </form>

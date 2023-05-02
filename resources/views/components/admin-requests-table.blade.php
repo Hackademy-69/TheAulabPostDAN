@@ -15,7 +15,7 @@
                 <td>{{ $user->name }}</td>
                 <td>{{ $user->email }}</td>
                 <td>
-                    <a href="{{ route('admin.make_user_admin', $user) }}" class="btn button-2">Rendi amministratore</a>
+                    <a href="{{ route('admin.make_user_admin', $user) }}" class="btn btn-custom">Rendi amministratore</a>
                 </td>
             </tr>
         @endforeach

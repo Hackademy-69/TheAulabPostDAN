@@ -24,7 +24,7 @@
                             @endforeach
                         </p>
                         <br>
-                        <a href="{{route('article.show', $article)}}" class="btn button-2 mt-3">Leggi</a>
+                        <a href="{{route('article.show', $article)}}" class="btn btn-custom mt-3">Leggi</a>
                         </div>
                     </div>
                 </div>

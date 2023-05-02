@@ -37,7 +37,7 @@
             <div class="col-auto">
   
               <!-- Submit button -->
-              <button type="submit" class="btn button-2 mb-4">
+              <button type="submit" class="btn btn-custom mb-4">
                 Subscribe
               </button>
             </div>
@@ -52,7 +52,7 @@
       <!-- Section: Text -->
       <section class="mb-4">
         <p>
-          <a class="button-2" href="{{route('careers')}}">Lavora con noi</a>
+          <a class="btn btn-custom" href="{{route('careers')}}">Lavora con noi</a>
         </p>
       </section>
       <!-- Section: Text -->
