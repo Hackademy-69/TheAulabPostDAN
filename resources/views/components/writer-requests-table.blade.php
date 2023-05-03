@@ -15,7 +15,7 @@
                 <td>{{ $user->name }}</td>
                 <td>{{ $user->email }}</td>
                 <td>
-                    <a href="{{ route('admin.make_user_writer', $user) }}" class="btn bg-main">Rendi articolista</a>
+                    <a href="{{ route('admin.make_user_writer', $user) }}" class="btn btn-custom">Rendi articolista</a>
                 </td>
             </tr>
         @endforeach

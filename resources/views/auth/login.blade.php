@@ -16,7 +16,7 @@
                     </div>
                 @endif
 
-                <form class="card p-5 shadow" action="{{route('login')}}" method="post">
+                <form class="card p-5 form-create" action="{{route('login')}}" method="post">
                 
                     @csrf
 
@@ -31,7 +31,7 @@
                     </div>
 
                     <div class="mt-2">
-                        <button class="btn bg-main">Accedi</button>
+                        <button class="btn btn-custom">Accedi</button>
                         <p class="small mt-2">Non sei registrato? <a href="{{route('register')}}">Clicca qui</a></p>
                     </div>
 

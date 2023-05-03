@@ -1,6 +1,6 @@
 <nav>
     <div class="container-fluid bg-dark d-block text-center">
-      <p class="m-0 p-3 text-white logo">The Aulab Post</p>
+      <p class="m-0 p-3 text-white logo text-logo">The Aulab Post</p>
     </div>
 </nav>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -52,7 +52,7 @@
           @endguest
         </ul>
 
-        <div class="search-container">
+        <div class="search-container d-none d-lg-block">
           <form action="{{route('article.search')}}" method="GET">
             <input class="search expandright form-control" id="searchright" type="search" name="query" placeholder="Cosa stai cercando?">
             <label class="buttonsrc searchbutton" for="searchright" type="submit"><span class="mglass">&#9906;</span></label>

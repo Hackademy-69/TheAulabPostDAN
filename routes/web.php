@@ -34,6 +34,12 @@ Route::middleware('admin')->group(function(){
     Route::get('/admin/{user}/set-admin}', [AdminController::class, 'make_user_admin'])->name('admin.make_user_admin');
     Route::get('/admin/{user}/set-revisor}', [AdminController::class, 'make_user_revisor'])->name('admin.make_user_revisor');
     Route::get('/admin/{user}/set-writer}', [AdminController::class, 'make_user_writer'])->name('admin.make_user_writer');
+    Route::put('/admin/edit/{tag}/tag', [AdminController::class, 'editTag'])->name('admin.editTag');
+    Route::delete('/admin/delete/{tag}/tag', [AdminController::class, 'deleteTag'])->name('admin.deleteTag');
+    Route::put('/admin/edit/{category}/category', [AdminController::class, 'editCategory'])->name('admin.editCategory');
+    Route::delete('/admin/delete/{category}/category', [AdminController::class, 'deleteCategory'])->name('admin.deleteCategory');
+    Route::post('/admin/category/store', [ AdminController::class, 'storeCategory'])->name('admin.storeCategory');
+
 });
 
 //REVISOR

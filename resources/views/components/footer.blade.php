@@ -2,7 +2,7 @@
 <footer class="bg-dark text-center text-white ">
 
     <div class="container-fluid bg-dark d-block text-center">
-      <p class="m-0 p-3 text-white logo">The Aulab Post</p>
+      <p class="m-0 p-3 text-white logo text-logo">The Aulab Post</p>
     </div>
 
 
@@ -37,7 +37,7 @@
             <div class="col-auto">
   
               <!-- Submit button -->
-              <button type="submit" class="btn btn-outline-light mb-4">
+              <button type="submit" class="btn btn-custom mb-4">
                 Subscribe
               </button>
             </div>
@@ -52,7 +52,7 @@
       <!-- Section: Text -->
       <section class="mb-4">
         <p>
-          <a href="{{route('careers')}}">Lavora con noi</a>
+          <a class="btn btn-custom" href="{{route('careers')}}">Lavora con noi</a>
         </p>
       </section>
       <!-- Section: Text -->
