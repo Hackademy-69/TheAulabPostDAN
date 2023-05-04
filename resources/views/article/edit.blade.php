@@ -15,9 +15,10 @@
                     </div>
                 @endif
 
-                <form class="card p-5 form-create" action="" method="" enctype="multipart/form-data">
+                <form class="card p-5 form-create" action="{{route('article.update', compact('article'))}}" method="post" enctype="multipart/form-data">
                 
                     @csrf
+                    @method('put')
 
                     <div class="mb-3">
                         <label for="title" class="form-label">Titolo:</label>
@@ -31,7 +32,7 @@
 
                     <div class="mb-3">
                         <label for="category" class="form-label">Categoria:</label>
-                        <select name="category_id">
+                        <select name="category">
                             @foreach($categories as $category)
                                 <option value="{{$category->id}}" @if($article->category && $category->id == $article->category->id) selected @endif>{{$category->name}}</option>
                             @endforeach

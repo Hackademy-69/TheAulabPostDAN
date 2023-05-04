@@ -5,9 +5,10 @@ namespace App\Http\Controllers;
 use App\Models\Tag;
 use App\Models\Article;
 use App\Models\Category;
+use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 
 class ArticleController extends Controller
@@ -80,11 +81,11 @@ class ArticleController extends Controller
             'title' => $request->title,
             'subtitle' => $request->subtitle,
             'body' => $request->body,
-            'category_id' => $request->category
+            'category' => $request->category
         ]);
 
         if($request->image){
-            storage::delete($article->image);
+            Storage::delete($article->image);
             $article->update([
                 'image' => $request->file('image')->store('public/images'),
             ]);
