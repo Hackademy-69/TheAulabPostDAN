@@ -11,10 +11,10 @@
     @endif
     
     <div class="container my-5">
-        <div class="row ">
+        <div class="row">
             
             @foreach($articles as $article)
-                <div class="col-12 col-md-6 col-lg-4 mt-4">
+                <div class="col-12 col-md-6 col-lg-4 mt-4 d-flex justify-content-center">
                     <div class="card card-custom" style="width: 22rem;">
                         <img src="{{Storage::url($article->img)}}" class="card-img-top card-img-custom" alt="{{$article->title}}">
                         <div class="card-body">

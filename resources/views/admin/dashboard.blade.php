@@ -1,5 +1,5 @@
 <x-layout
-    headerTitle="Dashboard">
+    headerTitle="Dashboard amministratore">
 
     @if(session('message'))
         <div class="text-center">
