@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Tag;
 use App\Models\Article;
 use App\Models\Category;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
@@ -37,7 +38,8 @@ class ArticleController extends Controller
             'subtitle' => $request->subtitle,
             'body' => $request->body,
             'img' => $request->file('img')->store('public/img'),
-            'category_id' => $request->category_id
+            'category_id' => $request->category_id,
+            'slug' => Str::slug($request->title),
         ]);
         
         $tags = explode(', ', $request->tags);
@@ -75,13 +77,15 @@ class ArticleController extends Controller
             'image' => 'image',
             'category' => 'required',
             'tags' => 'required',
+    
         ]);
 
         $article->update([
             'title' => $request->title,
             'subtitle' => $request->subtitle,
             'body' => $request->body,
-            'category' => $request->category
+            'category' => $request->category,
+            'slug' => Str::slug($request->title),
         ]);
 
         if($request->image){

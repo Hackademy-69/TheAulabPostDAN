@@ -27,6 +27,7 @@
                         @else
                         <p>Non categorizzato</p>
                         @endif
+                        <span class="text-muted small fst-normal">-tempo di lettura {{$article->readDuration()}} min</span>
                         <p class="fst-normal tag-text">
                             @foreach ($article->tags as $tag)
                             #{{$tag->name}}

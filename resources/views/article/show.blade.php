@@ -9,6 +9,8 @@
                 <h3 class="sub-text">{{$article->subtitle}}</h3>
 
                 <p class="fst-normal tag-text "><a href="{{route('article.category', $article->category)}}" class="card-text">{{$article->category->name}}</a></p>
+
+                <span class="text-muted small fst-normal">-tempo di lettura {{$article->readDuration()}} min</span>
                 
                 <p class="small fst-normal">
                     @foreach ($article->tags as $tag)

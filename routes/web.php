@@ -24,7 +24,7 @@ Route::get('/careers', [PublicController::class, 'careers'])->name('careers');
 Route::post('/careers/submit', [PublicController::class, 'careers_submit'])->name('careers.submit');
 
 //ARTICLE
-Route::get('/article/{article}/show', [ArticleController::class, 'show'])->name('article.show');
+Route::get('/article/{article:slug}/show', [ArticleController::class, 'show'])->name('article.show');
 Route::get('/article/{category}/index', [ArticleController::class, 'articles_by_category'])->name('article.category');
 
 Route::get('/article/search', [ArticleController::class, 'articleSearch'])->name('article.search');
