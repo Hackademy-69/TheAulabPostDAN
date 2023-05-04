@@ -87,7 +87,7 @@ class ArticleController extends Controller
         if($request->image){
             Storage::delete($article->image);
             $article->update([
-                'image' => $request->file('image')->store('public/images'),
+                'image' => $request->file('image')->store('public/img'),
             ]);
         }
 
@@ -103,7 +103,7 @@ class ArticleController extends Controller
 
         $article->tags()->sync($newTags);
 
-        return redirect(route('writer.dashboard'))->with('message', 'Hai correttamente aggiornato l\'articolo scelto');
+        return redirect(route('writer.dashboard'))->with('message', "Hai correttamente aggiornato l'articolo scelto");
     }
 
     

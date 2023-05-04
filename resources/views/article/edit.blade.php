@@ -15,9 +15,10 @@
                     </div>
                 @endif
 
-                <form class="card p-5 form-create" action="{{route('article.update', compact('article'))}}" method="post" enctype="multipart/form-data">
+                <form class="card p-5 shadow" action="{{route('article.update', compact('article'))}}{{route('article.update', compact('article'))}}" method="postpost" enctype="multipart/form-data">
                 
                     @csrf
+                    @method('put')
                     @method('put')
 
                     <div class="mb-3">
@@ -57,7 +58,7 @@
                     </div>
 
                     <div class="mt-2">
-                        <button class="btn btn-custom">Pubblica articolo</button>
+                        <button class="btn btn-custom" type="submit">Aggiorna articolo</button>
                         <a class="btn btn-custom" href="{{route('home')}}">Torna alla home</a>
                     </div>
                     
