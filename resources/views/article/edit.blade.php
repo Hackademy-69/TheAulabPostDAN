@@ -15,11 +15,11 @@
                     </div>
                 @endif
 
-                <form class="card p-5 shadow" action="{{route('article.update', compact('article'))}}{{route('article.update', compact('article'))}}" method="postpost" enctype="multipart/form-data">
+                <form class="card p-5 shadow" action="{{route('article.update', compact('article'))}}" method="post" enctype="multipart/form-data">
                 
                     @csrf
                     @method('put')
-                    @method('put')
+    
 
                     <div class="mb-3">
                         <label for="title" class="form-label">Titolo:</label>
