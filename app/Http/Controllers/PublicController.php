@@ -20,6 +20,10 @@ class PublicController extends Controller
         return view('careers');
     }
 
+    public function about(){
+        return view('about');
+    }
+
     public function careers_submit(Request $request){
         $user = Auth::user();
 

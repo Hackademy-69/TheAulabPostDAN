@@ -18,6 +18,10 @@
             <a class="nav-link" href="{{route('article.create')}}">Pubblica Articolo</a>
           </li>
 
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="{{route('about')}}">Chi siamo</a>
+          </li>
+
           @guest
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
