@@ -25,7 +25,7 @@
                     <select name="role" id="role" class="form-control">
                         <option value="admin">Amministratore</option>
                         <option value="revisor">Revisore</option>
-                        <option value="writer">Articolista</option>
+                        <option value="writer">Redattore</option>
                     </select>
                 </div>
 
