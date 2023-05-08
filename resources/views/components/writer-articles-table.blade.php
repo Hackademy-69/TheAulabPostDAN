@@ -1,6 +1,6 @@
 <table class="table table-striped table-hover border">
     <thead class="table-dark">
-        <tr>
+        <tr class="table">
             <th scope="col">#</th>
             <th scope="col">Titolo</th>
             <th scope="col">Sottotitolo</th>
@@ -12,8 +12,8 @@
     </thead>
     <tbody>
         @foreach ($articles as $article)
-        <tr>
-            <th scope="row">{{$article->id}}</th>
+        <tr class="table">
+            <th scope="row ">{{$article->id}}</th>
             <td>{{$article->title}}</td>
             <td>{{$article->subtitle}}</td>
             <td>{{$article->category->name ?? 'Non categorizzato'}}</td>
