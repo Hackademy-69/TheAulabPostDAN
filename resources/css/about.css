@@ -1,3 +1,11 @@
 .bg-about{
    background-color:  rgb(248, 223, 211);
 }
+
+.img-cust{
+   border-radius: 50%;
+   width: 300px;
+   height: 300px;
+   padding: 5px;
+   border: solid 2px black;
+}

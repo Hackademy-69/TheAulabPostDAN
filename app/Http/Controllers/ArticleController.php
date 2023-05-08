@@ -71,8 +71,8 @@ class ArticleController extends Controller
     public function update(Request $request, Article $article)
     {
         $request->validate([
-            'title' => 'required|min:5|unique:articles,title,' . $article->id,
-            'subtitle' => 'required|min:5|unique:articles,subtitle,' . $article->id,
+            'title' => 'required|unique:articles,title,' . $article->id,
+            'subtitle' => 'required|unique:articles,subtitle,' . $article->id,
             'body' => 'required|min:10',
             'image' => 'image',
             'category' => 'required',
